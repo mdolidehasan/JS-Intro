@@ -65,7 +65,7 @@ console.log(password({ name: 'rahat' , birthYear: 2002, siteName: 'Facebook' } )
 
 
 function monthlySavings(array, livingCost) {
-    if (!Array.isArray(array) && typeof livingCost != 'number') {
+    if (!Array.isArray(array) || typeof livingCost != 'number') {
         return "Invalid";
     }
     else {
